@@ -39,9 +39,9 @@ const daysOfWeek = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun",true];
 console.log(daysOfWeek[2]);
 
 
-const arrayOfPersonalData = ["Blue","55",true,"Seoul"];
+const arrayOfPersonalData = ["Blue","55",true,["along the gods","kimchi"],{name:"kimchi",file:"save"}];
 
-console.log(arrayOfPersonalData[0]);
+console.log(arrayOfPersonalData);
 
 const objectOfPersonalData = {
    Name: "Helga",
@@ -51,7 +51,8 @@ const objectOfPersonalData = {
    favMovies: ["Along the gods","LOTR","Oldboy"],
    favFood: [{name:"Kimchi",fatty:false},
             {name:"Cheese burger",fatty:true}
-            ]
+            ],
 }
 
 console.log(objectOfPersonalData);
+
