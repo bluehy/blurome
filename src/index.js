@@ -37,12 +37,12 @@ const resetName = printNameBox.querySelector("button");
 const USER_LS = "username";
 
 function handleEnter(){
-   resetName.innerText = "I want to change my name";
+   resetName.innerText = "I want to change the name";
    resetName.classList.add("action");
 }
 
 function handleLeave(){
-   resetName.innerText =`Is it not your name?`;
+   resetName.innerText =`Isn't that your name?`;
    resetName.classList.remove("action");
 }
 
@@ -51,7 +51,7 @@ function paintGreeting(){
 
    nameZone.classList.remove("action");
    printNameBox.classList.add('action');
-   printName.innerText = `I'm waiting for you, ${savedName}!`;
+   printName.innerText = `I've been waiting for you, ${savedName}!`;
    headGreeting.innerText = "welcome back!!";
    
    resetName.addEventListener("click",askForName);
