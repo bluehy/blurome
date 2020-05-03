@@ -1,31 +1,80 @@
 <!DOCTYPE html>
+<!-- index.html -->
 <html lang="ko-KR">
-   <head>
+    <head>
       <meta charset="UTF-8">
-      <link rel="stylesheet" href="./css/index.css">
-      <title>타이틀</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="description" content="웹페이지 제작 실습">
+      <meta name="keyword" content="html, css, js, web, design, 웹디자인">
+      <meta name="author" content="bluehy">
+      <meta name="generator" content="illustrator, photoshop, sublimetext, vscode">
+
+      <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./fonts/fontawesome-free-5.13.0-web/css/all.css">
+      <link rel="stylesheet" href="./src/reset.css">
+      <link rel="stylesheet" href="./src/common.css">
+      <link rel="stylesheet" href="./src/styles.css">
+
+      <!--[if lte IE 9]>
+         <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+         <script src="../ie/PIE/PIE.js"></script>
+         <script src="../ie/respond/dest/respond.min.js"></script>
+      <![endif]-->
+
+      <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+      <link rel="apple-touch-icon" href="./images/favicon.png">
+
+      <title>blurome</title>
    </head>
+<!--  --> 
    <body>
-      <!-- <h1 id="title">This works!</h1> -->
-      <div class="js-clock">
-         <h1>00:00</h1>
+  <!-- noscript -->
+      <noscript>
+         <p>현재 접속하고 있는 사이트의 기능의 일부가 원활하게 실행되고 있지 않습니다.<br/>
+         자바스크립트의 기능을 활성화해주세요.</p>
+         <p><a target="_blank" href="http://enable-javascript.com/ko/">자바스크립트 활성화 처리하기</a></p>
+      </noscript>
 
-      </div>
-      <form class="js-form form">
-         <input type="text" placeholder="What is your name?"/>
+   <!-- layout =============== -->
+   <div id="wrap">
+      <section id="mainBox">
+         <h1>welcome</h1>
+         
+         <div id="clock">
 
-      </form>
-      <h4 class="js-greetings greetings"></h4>
-
-      <form class="js-toDoForm" action="#">
-         <input type="text" placeholder="write a to do"/>
-      </form>
-      <ul class="js-toDoList"></ul>
-
-      <!-- <script src="./js/index.js"></script> -->
-      <!-- <script src="js/day4.js"></script> -->
-      <script src="js/clock.js"></script>
-      <script src="js/greeting.js"></script>
-      <script src="js/todo.js"></script>
+         </div>
+         <form id="nameBox">
+            <fieldset>
+               <legend>사용자이름 입력용 폼</legend>
+               <label class="hidden">사용자이름 입력칸</label>
+               <input type="text" class="input_name" placeholder="Type your name"/>
+               <div class="know_name">
+                  <span></span>
+                  <button type="button">Is it not your name?</button>
+               </div>
+            </fieldset>
+         </form>
+         <form id="toDoBox">
+            <fieldset>
+               <legend>할 일 입력용 폼</legend>
+               <label class="hidden">할 일 입력칸</label>
+               <input type="text" class="input_to_do" placeholder="What I have to do...">
+               
+            </fieldset>
+         </form>
+         <div class="to_do_zone">
+            <ul>
+            </ul>
+         </div>
+      </section>
+      <footer id="footBox">
+         <div class="weather_zone">
+            @YOURLOCATION
+         </div>
+      </footer>
+   </div>
+   <!-- script ================ -->
+      <script src="./src/index.js"></script>
    </body>
 </html>
